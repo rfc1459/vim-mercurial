@@ -18,6 +18,7 @@ syn match hgCommitBranch     "branch '"   contained containedin=hgCommitComment 
 syn match hgCommitBranchname "[^']*"      contained
 syn match hgCommitAdded      "added "     contained containedin=hgCommitComment nextgroup=hgCommitPath
 syn match hgCommitRemoved    "removed "   contained containedin=hgCommitComment nextgroup=hgCommitPath
+syn match hgCommitChanged    "changed "   contained containedin=hgCommitComment nextgroup=hgCommitPath
 syn match hgCommitPath       ".*"         contained
 
 hi def link hgCommitSummary    Keyword
@@ -28,6 +29,7 @@ hi def link hgCommitUser       Type
 hi def link hgCommitBranch     Type
 hi def link hgCommitAdded      Type
 hi def link hgCommitRemoved    Type
+hi def link hgCommitChanged    Type
 hi def link hgCommitUsername   Special
 hi def link hgCommitBranchname Special
 hi def link hgCommitPath       Special
